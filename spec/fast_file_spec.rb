@@ -284,7 +284,7 @@ describe Fastlane do
           cocoapods
         end").runner.execute(:test)
 
-        expect(result).to eq("pod install")
+        expect(result).to eq("bundle exec pod install")
       end
 
       it "calls the error block when an error occurs" do
